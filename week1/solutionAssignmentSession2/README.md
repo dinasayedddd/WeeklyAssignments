@@ -1,0 +1,1 @@
+Create solutionAssignmentSession2 folder with README
