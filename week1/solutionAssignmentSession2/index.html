@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session</title>
+</head>
+
+<body style="background-color: #000842 ">
+    <form style="background-color: #009147; padding: 20px;">
+    <fieldset style="padding: 40px;">
+        <legend  style="padding: 10px; background-color: #FFCC47">Upskilling Form</legend>
+        <fieldset>
+        <legend style="padding: 10px; background-color: #FFCC47">Required Fields</legend>
+        <table>
+            <tr>
+            <td><label for="fName">First Name:</label></td>
+            <td><input type="text" name="fName" id="fName"></td>
+            </tr>
+            <tr>
+            <td><label for="lName">Last Name:</label></td>
+            <td><input type="text" name="lName" id="lName"></td>
+            </tr>
+            <tr>
+            <td><label for="phone">Phone:</label></td>
+            <td><input type="number" name="phone" id="phone"></td>
+            </tr>
+            <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" name="password" id="password"></td>
+            </tr>
+        </table>
+        </fieldset>
+        <fieldset style="margin-top: 40px;">
+        <legend  style="padding: 10px; background-color: #FFCC47">Optional Fields</legend>
+        <table>
+            <tr>
+            <td><label for="package">Package:</label></td>
+            <td>
+                <select name="Package" id="package">
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="pro">Pro</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td><label for="city">City:</label></td>
+            <td>
+                <select name="City" id="city">
+                <option value="Cairo">Cairo</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Giza">Giza</option>
+                <option value="alex">Alex</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td><label>Gender:</label></td>
+            <td>
+                <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+            </td>
+            </tr>
+            <tr>
+            <td><label>Languages:</label></td>
+            <td>
+                <input type="checkbox" name="Languages" id="html"><label for="html">HTML</label>
+                <input type="checkbox" name="Languages" id="css"><label for="css">CSS</label>
+                <input type="checkbox" name="Languages" id="js"><label for="js">JS</label>
+            </td>
+            </tr>
+            <tr>
+            <td><label for="fees">Fees:</label></td>
+            <td>1000 <input type="range" name="fees" id="fees" min="1000" max="5000" step="2000"> 5000</td>
+            </tr>
+        </table>
+        </fieldset>
+        <br>
+        <button type="submit">Register</button>
+    </fieldset>
+</form>
+</body>
+</html>
