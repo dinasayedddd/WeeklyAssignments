@@ -1,0 +1,730 @@
+:root {
+    --main-color: #FEA116;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    font-family: "Heebo", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666565;
+    background-color: #F1F8FF !important;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* start home */
+#home {
+    background-image: url(../imgs/bg-hero.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+#home .overlay {
+    background: rgba(15, 23, 43, 0.9);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+@font-face {
+    font-family: Heebo;
+    src: url(../fonts/Heebo-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Pacifico;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+.nameBrand {
+    color: var(--main-color);
+    font-weight: 900;
+    font-size: 45px;
+    font-family: Nunito;
+}
+.nameBrand:hover {
+    color: var(--main-color);
+}
+.iconBrand {
+    color: var(--main-color);
+    margin-left: 48px;
+}
+.btnNav {
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 28px;
+    font-size: 18px;
+    color: #fff;
+    transition: all 1s;
+    margin-left: 15px;
+}
+.btnNav:hover {
+    background-color: #FEAf00;
+    color: #fff;
+}
+.active {
+    color: var(--main-color);
+}
+ul li {
+    font-size: 18px;
+    font-family: Heebo;
+    font-weight: 500;
+}
+ul li a {
+    color: #fff !important;
+    transition: all 1s;
+}
+ul li a:hover {
+    color: var(--main-color) !important;
+}
+ul li .active {
+    color: var(--main-color) !important;
+}
+.dropdown {
+    font-size: 18px;
+    font-family: Heebo;
+    font-weight: 500;
+}
+.dropdown ul li a {
+    color: #000 !important;
+}
+.text-home h1 {
+    font-family: Nunito;
+    font-weight: 800 !important;
+    font-size: 60px !important;
+}
+.text-home p {
+    font-family: Heebo;
+    font-weight: 400;
+    font-size: 17px;
+}
+.text-home button {
+    background-color: var(--main-color);
+    margin-top: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 28px;
+    font-size: 18px;
+    color: #fff;
+    transition: all 1s;
+}
+.text-home button:hover {
+    background-color: #FEAf00;
+    color: #fff;
+}
+.heroImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroImg img {
+    width: 90%;
+    animation: spin 40s linear infinite;
+    -webkit-animation: spin 40s linear infinite;
+}
+@media (max-width: 991.98px) {
+    .heroImg img {
+        width: 30%;
+        margin-left: 0;  
+        margin-right: auto;
+    }
+}
+@media (max-width: 767.98px) {
+    .heroImg img {
+        width: 40%;
+        text-align: left;
+        margin-left: 0;   
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.custom-navbar {
+    background-color: transparent;
+}
+@media (max-width: 991.98px) {
+    .custom-navbar {
+        background: rgba(15, 23, 60, 0.9) !important;
+    }
+}
+.service-item {
+    background-color: #F8FfFF;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.service-item i {
+    color: var(--main-color) !important;
+}
+.service-item p {
+    color: #666565;
+}
+.service-item p {
+    color: #666565;
+}
+.service-item:hover {
+    background-color: var(--main-color);
+}
+.service-item:hover i {
+    color: #fff !important;
+}
+.service-item:hover p {
+    color: #fff !important;
+}
+.service-item:hover h5 {
+    color: #fff !important;
+}
+/* end home */
+
+/* start about */
+#about {}
+#about h5 {
+    font-family: Pacifico !important;
+    font-size: 20px;
+    color: var(--main-color) !important;
+    position: relative;
+}
+#about h5::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 11px;
+    left: 15%;
+}
+#about h1 {
+    font-family: Nunito;
+    font-weight: 800 !important;
+    color: black;
+}
+#about h1 i {
+    color: var(--main-color) !important;
+}
+#about .border-color {
+    border-color: var(--main-color) !important;
+}
+#about h1.border-text {
+    color: var(--main-color) !important;
+}
+.btn-about {
+    background-color: var(--main-color);
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-about:hover {
+    background-color: #FEAf00;
+    border: none;
+    color: #fff;
+}
+/* end about */
+
+/* start menu */
+#menu .info1 h5 {
+    font-family: Pacifico !important;
+    position: relative;
+    font-size: 20px;
+    color: var(--main-color) !important;
+}
+#menu .info1 h5::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 11px;
+    left: 41.5%;
+}
+#menu .info1 h5::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 11px;
+    right: 41.5%;
+}
+#menu .info1 h1 {
+    font-family: Nunito;
+    font-weight: 800 !important;
+    color: black;
+}
+#menu .info2 i {
+    color: var(--main-color) !important;
+}
+#menu .info2 small {
+    color: #666565 !important;
+}
+#menu .info2 a {
+    text-decoration: none;
+    transition: all 1s;
+}
+#menu .info2 h6 {
+    color: #000 !important;
+    position: relative;
+}
+#menu .info3 h6::before {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: -16px;
+    left: -89%;
+}
+#menu .info4 h5 span {
+    color: black;
+    font-family: Nunito !important;
+    font-weight: 800 !important;
+    font-size: 18px !important;
+}
+#menu .info4 small {
+    color: #666565 !important;
+    font-family: Nunito !important;
+}
+.price {
+    color: orange !important;
+}
+/* end menu */
+
+/* start reservation */
+.text-reservation {
+    background-color: #0F172B;
+}
+.text-reservation h5 {
+    font-family: Pacifico !important;
+    position: relative;
+    font-size: 20px;
+    color: var(--main-color) !important;
+}
+.text-reservation h5::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    left: 19%;
+}
+.text-reservation h1 {
+    font-family: Nunito;
+    font-weight: 800 !important;
+    color: #fff;
+}
+.text-reservation button {
+    background-color: var(--main-color);
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+.text-reservation button:hover {
+    background-color: #FEAf00;
+    border: none;
+    color: #fff;
+}
+/* end reservation */
+
+/* start team */
+.team h5 {
+    font-family: Pacifico !important;
+    font-size: 20px;
+    color: var(--main-color) !important;
+    position: relative;
+    margin: 30px 20px;
+}
+.team h5::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    left: 40%;
+}
+.team h5::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    right: 40%;
+}
+.team h1,
+.team h4 {
+    color: #000;
+    font-family: Nunito;
+    font-weight: 800 !important;
+}
+.team .card {
+    transition: all 0.4s ease;
+    overflow: hidden;
+    position: relative;
+}
+.team .card .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team .card:hover .card-social {
+    color: var(--main-color);
+    color: white;
+    border-radius: 15px;
+}
+.team .card:hover .btn {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: white;
+    color: var(--main-color);
+}
+.team .card:hover .btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.1);
+}
+.team .card .card-title,
+.team .card small {
+    transition: color 0.4s ease;
+}
+.team .card:hover .rounded-circle {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+/* end team */
+
+/* start testimonial */
+#testimonialCarousel .card img {
+    transition: transform 0.4s ease;
+}
+#testimonialCarousel .card:hover img {
+    transform: scale(1.1);
+}
+#testimonialCarousel .card i {
+    color: var(--main-color) !important;
+    padding: 8px;
+    font-size: 50px !important;
+}
+.testimonial-header h1 {
+    font-family: Nunito;
+    font-weight: 800 !important;
+    color: #000;
+}
+.testimonial-header h5 {
+    font-family: Pacifico !important;
+    font-size: 20px;
+    color: var(--main-color) !important;
+    position: relative;
+    margin: 30px 20px;
+}
+.testimonial-header h5::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    left: 41%;
+}
+.testimonial-header h5::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    right: 41%;
+}
+.carousel {
+    padding: 40px 20px;
+}
+#testimonialCarousel .card {
+    width: 100% !important;
+    max-width: 400px;
+    min-height: 200px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    background-color: white;
+}
+#testimonialCarousel .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 123, 0, 0.4);
+    background-color: var(--main-color) !important;
+    color: white !important;
+}
+#testimonialCarousel .card:hover i {
+    color: white !important;
+}
+#testimonialCarousel .card:hover .quote-icon {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+#testimonialCarousel .card-body {
+    border: 1px solid #efefef;
+    padding: 25px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#testimonialCarousel .quote-icon {
+    font-size: 32px;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    text-align: left;
+}
+#testimonialCarousel .testimonial-text {
+    color: #666565;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    text-align: right;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+#testimonialCarousel .card:hover .testimonial-text {
+    color: white !important;
+}
+#testimonialCarousel .author-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto;
+    flex-direction: row-reverse;
+}
+#testimonialCarousel .card img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+#testimonialCarousel .author-details {
+    text-align: left;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+}
+#testimonialCarousel .author-details h5 {
+    color: #000;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+#testimonialCarousel .author-details p {
+    color: #666565;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+#testimonialCarousel .card:hover .author-details h5 {
+    color: white !important;
+}
+#testimonialCarousel .card:hover .author-details p {
+    color: white !important;
+}
+.carousel-indicators {
+    margin-bottom: -30px;
+    gap: 10px;
+}
+.carousel-indicators button {
+    width: 25px!important;
+    height: 20px!important;
+    border-radius: 50%;
+    margin: 0;
+    border: 1px solid rgba(160, 159, 159, 0.6) !important;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.carousel-indicators button.active {
+    background: linear-gradient(135deg, #ff7b00 0%, #ff9500 100%);
+    border-radius: 50%;
+    transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border: none !important;
+}
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+}   
+.carousel-control-prev-icon::before {
+    content: "\f104";
+}
+.carousel-control-next-icon::before {
+    content: "\f105";
+}
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    padding: 0 20px;
+}
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #testimonialCarousel .card {
+        max-width: 300px;
+        margin-bottom: 0;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .carousel-slide {
+        gap: 15px;
+    }
+    #testimonialCarousel .card {
+        max-width: 280px;
+    }
+}
+@media (min-width: 993px) {
+    .carousel-slide {
+        gap: 25px;
+    }
+    #testimonialCarousel .card {
+        max-width: 400px;}
+    }
+/* footer testimonial */
+#footer {
+    background-color: #0F172B;
+    color: #fff;
+    font-family: Nunito;
+    font-weight: 800 !important;
+}
+#footer h4 {
+    color: var(--main-color);
+    font-family: Pacifico !important;
+    font-size: 20px;
+    position: relative;
+    margin: 30px 20px;
+}
+#footer h4::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    left: 40%;
+}
+#footer h4::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 10px;
+    right: 40%;
+}
+#footer .linkFooter {
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s;
+    display: block;
+    display: flex;
+    margin-top: -5px;
+    justify-content: left;
+}
+#footer .linkFooter:hover {
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+#footer .linkFooter .fa-angle-right {
+    margin-right: 10px;
+}
+#footer .socialFooter {
+    border-radius: 50%;
+    margin-left: 7px;
+    transition: all 1s;
+    color: #fff;
+    font-size: 14px;
+}
+#footer .socialFooter:hover {
+    color: var(--main-color);
+    letter-spacing: 1px;
+}
+#footer input {
+    border: none !important;
+    border: 2px solid var(--main-color) !important;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 14px;
+    outline: var(--main-color) !important;
+}
+#footer button {
+    background-color: var(--main-color);
+    border: none;
+    font-size: 18px;
+    color: #fff;
+}
+#footer button:hover {
+    background-color: #FEAf00;
+    border: none;
+    color: #fff;
+}
+.copyrightFooter {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-menu a {
+    padding: 10px;
+    border-right: #666565 1px solid;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.footer-menu a:hover {
+    color: var(--main-color);
+    letter-spacing: 2px;
+}
+.horizontalLy {
+    width: 100%;
+    height: 1px;
+    background-color: #666565;
+    margin-bottom: 30px;
+}
+/* end footer */
