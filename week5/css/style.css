@@ -1,0 +1,38 @@
+.heroSection {
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url("../imges/hero_1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection{
+  color: #fff;
+  background-color: #000;
+}
+
+/* .infoSectionThree{
+  top:260%;
+  left: 161px;
+  
+}
+.social1{
+  top:260%;
+  left: 161px;
+  opacity: 0;
+  transition:all 0.5s linear;
+
+} 
+.social1:hover{
+  top:255%;
+  opacity:1;
+}
+
+.social ul li{
+  display: inline-block;
+} */
